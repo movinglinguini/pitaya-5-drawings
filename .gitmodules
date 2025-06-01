@@ -1,0 +1,3 @@
+[submodule "Pitaya"]
+	path = Pitaya
+	url = git@github.com:movinglinguini/Pitaya-5.git
