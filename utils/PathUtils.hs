@@ -44,8 +44,8 @@ connectHelper pathName startTurn endTurn eRadius (n : ns) int stepSize =
   }
 
 connect :: String -- Name for the edges in the path
-  -> Double -- How much the path connecting the nodes turns
-  -> Double -- 
+  -> Double -- Starting part of the turn
+  -> Double -- Ending part of the turn
   -> Double -- The radius for each edge of the path
   -> [Pitaya.Node]
   -> Pitaya.Path
