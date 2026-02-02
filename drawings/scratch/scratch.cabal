@@ -1,0 +1,22 @@
+cabal-version:      3.0
+
+name:               scratch
+version:            0.1.0.0
+license:            MIT
+license-file:       LICENSE
+author:             Luis
+maintainer:         lag96@protonmail.com
+category:           Graphics
+build-type:         Simple
+extra-doc-files:    CHANGELOG.md
+
+common warnings
+    ghc-options: -Wall
+
+executable scratch
+    import:           warnings
+    main-is:          Main.hs
+    other-modules: Pitaya, MathUtils, PathUtils, DrawingUtils
+    build-depends:    base, diagrams-lib, diagrams-svg
+    hs-source-dirs:   src, ../../lib/Pitaya/src, ../../utils
+    default-language: Haskell2010
